@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eloy Angulo — AI Engineer</title>
+  <meta name="description" content="Eloy Angulo Cánovas, AI Engineer. Sistemas con LLMs cloud y on-premise, extracción estructurada de documentos, agentes y automatización en entornos reales de negocio.">
+  <meta property="og:title" content="Eloy Angulo — AI Engineer">
+  <meta property="og:description" content="Sistemas de IA que sobreviven al mundo real: LLMs on-premise, extracción documental, agentes y automatización.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230c0c0e'/%3E%3Ctext x='32' y='42' font-family='monospace' font-size='28' fill='%23ffb020' text-anchor='middle'%3E{e}%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Instrument+Serif:ital@1&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main" data-i18n="nav.skip">Saltar al contenido</a>
+
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#top" class="nav-logo mono" aria-label="Inicio">eloy<span class="accent">.</span>angulo</a>
+      <nav class="nav-links" aria-label="Secciones">
+        <a href="#experiencia" data-i18n="nav.experience">Experiencia</a>
+        <a href="#proyectos" data-i18n="nav.projects">Proyectos</a>
+        <a href="#stack" data-i18n="nav.stack">Stack</a>
+        <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="lang-toggle" class="icon-btn mono" aria-label="Switch language">EN</button>
+        <button id="theme-toggle" class="icon-btn" aria-label="Cambiar tema">
+          <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="mono hero-kicker reveal"><span class="accent">~</span>/eloy-angulo-canovas · <span data-i18n="hero.role">ai-engineer</span></p>
+          <h1 class="hero-title reveal" data-i18n="hero.title">Construyo sistemas de IA que sobreviven al <em>mundo real</em>.</h1>
+          <p class="hero-sub reveal" data-i18n="hero.sub">LLMs cloud y on-premise, extracción estructurada de documentos complejos, agentes y automatización de procesos — en entornos reales de negocio, no en demos.</p>
+          <div class="hero-status reveal">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span class="mono" data-i18n="hero.status">AI Engineer en Atrebo · abierto a proyectos freelance</span>
+          </div>
+          <div class="hero-cta reveal">
+            <a href="#proyectos" class="btn btn-primary" data-i18n="hero.cta1">Ver proyectos</a>
+            <a href="#contacto" class="btn btn-ghost" data-i18n="hero.cta2">Contactar</a>
+          </div>
+        </div>
+
+        <div class="hero-terminal reveal" aria-hidden="true">
+          <div class="terminal">
+            <div class="terminal-bar">
+              <span class="t-dot"></span><span class="t-dot"></span><span class="t-dot"></span>
+              <span class="terminal-title mono">extract — pipeline</span>
+            </div>
+            <pre class="terminal-body mono" id="terminal-body"></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track mono" id="marquee-track"></div>
+    </div>
+
+    <!-- ============ 01 PERFIL / AHORA ============ -->
+    <section class="section" id="perfil">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="mono section-num">01</span>
+          <h2 data-i18n="about.title">Perfil</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p class="lead" data-i18n="about.lead">Trabajo donde la IA deja de ser una demo y empieza a ser un <em>proceso</em>: extracción de información desde documentos complejos, pipelines de procesamiento, benchmarking de modelos y agentes que automatizan trabajo real.</p>
+            <p data-i18n="about.p1">Me muevo igual de cómodo afinando prompts para arañar precisión que desplegando la infraestructura donde corren los modelos: Ollama sobre multi-GPU, Docker, Caddy, Authentik. Creo en la mejora iterativa — medir, validar a mano, ajustar y volver a medir.</p>
+            <p data-i18n="about.p2">Antes de la IA aplicada, desarrollo de aplicaciones en Deloitte con Angular y TypeScript. Esa base de ingeniería de software es la que hace que mis sistemas de IA se integren en aplicaciones reales, con APIs limpias y código mantenible.</p>
+          </div>
+          <aside class="now-card reveal">
+            <h3 class="mono now-title"><span class="accent">▸</span> <span data-i18n="now.title">ahora mismo</span></h3>
+            <ul class="now-list">
+              <li>
+                <span class="mono now-tag" data-i18n="now.i1tag">formación</span>
+                <p data-i18n="now.i1">Cursando el Máster en IA &amp; Data Science (UNIR): machine learning, Python para data science y desarrollo de agentes cloud.</p>
+              </li>
+              <li>
+                <span class="mono now-tag" data-i18n="now.i2tag">infraestructura</span>
+                <p data-i18n="now.i2">Profundizando en despliegue local de LLMs e infraestructura multi-GPU: qué modelo corre, dónde y a qué coste.</p>
+              </li>
+              <li>
+                <span class="mono now-tag" data-i18n="now.i3tag">producto</span>
+                <p data-i18n="now.i3">Evolucionando mi dashboard de inspecciones de ascensores, de proyecto para un cliente a producto comercializable.</p>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 02 EXPERIENCIA ============ -->
+    <section class="section" id="experiencia">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="mono section-num">02</span>
+          <h2 data-i18n="exp.title">Experiencia</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-meta">
+              <span class="mono timeline-date" data-i18n="exp.a.date">actualidad</span>
+            </div>
+            <div class="timeline-card">
+              <header class="timeline-head">
+                <h3>Atrebo</h3>
+                <span class="mono timeline-role">AI Engineer</span>
+              </header>
+              <ul class="timeline-list">
+                <li data-i18n="exp.a.b1">Sistemas de extracción de información estructurada desde documentos técnicos con LLMs on-premise: Ollama sobre multi-GPU, con modelos como Gemma, Qwen y DeepSeek.</li>
+                <li data-i18n="exp.a.b2">Benchmarking de LLMs — calidad, latencia, throughput y consumo de GPU — para decidir con datos qué modelo entra en producción.</li>
+                <li data-i18n="exp.a.b3">Pipelines completos de procesamiento documental: OCR, preprocesado, chunking y postprocesado.</li>
+                <li data-i18n="exp.a.b4">Diseño y optimización de prompts con testing y validación manual, mejorando precisión y consistencia de forma iterativa.</li>
+                <li data-i18n="exp.a.b5">Despliegue de infraestructura interna: BookStack, Docusaurus, Docker, Caddy y Authentik.</li>
+              </ul>
+              <div class="tags mono">
+                <span>Ollama</span><span>Python</span><span>Multi-GPU</span><span>Docker</span><span>Prompt engineering</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-meta">
+              <span class="mono timeline-date" data-i18n="exp.f.date">actualidad</span>
+            </div>
+            <div class="timeline-card">
+              <header class="timeline-head">
+                <h3 data-i18n="exp.f.name">Freelance</h3>
+                <span class="mono timeline-role" data-i18n="exp.f.role">IA & Automatización</span>
+              </header>
+              <ul class="timeline-list">
+                <li data-i18n="exp.f.b1">Automatizaciones con LLMs, Python y APIs: integración de IA en workflows de datos para análisis, clasificación y reporting.</li>
+                <li data-i18n="exp.f.b2">Web scraping y procesamiento de datos como entrada de pipelines inteligentes.</li>
+                <li data-i18n="exp.f.b3">Orquestación de procesos y dashboards automatizados de principio a fin.</li>
+                <li data-i18n="exp.f.b4">Desarrollo asistido por IA como flujo de trabajo diario, con uso avanzado de Claude Code.</li>
+              </ul>
+              <div class="tags mono">
+                <span>Python</span><span>APIs</span><span>n8n</span><span>Claude Code</span><span>Web scraping</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-meta">
+              <span class="mono timeline-date">04/2024 — 02/2025</span>
+            </div>
+            <div class="timeline-card">
+              <header class="timeline-head">
+                <h3>Deloitte</h3>
+                <span class="mono timeline-role" data-i18n="exp.d.role">Desarrollador</span>
+              </header>
+              <ul class="timeline-list">
+                <li data-i18n="exp.d.b1">Desarrollo y mantenimiento de aplicaciones internas con Angular y TypeScript.</li>
+                <li data-i18n="exp.d.b2">Resolución de incidencias y mejoras evolutivas en un entorno Scrum, con Jira y Git.</li>
+              </ul>
+              <div class="tags mono">
+                <span>Angular</span><span>TypeScript</span><span>Scrum</span><span>Git</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 03 PROYECTOS ============ -->
+    <section class="section" id="proyectos">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="mono section-num">03</span>
+          <h2 data-i18n="proj.title">Proyectos destacados</h2>
+        </div>
+        <p class="section-intro reveal" data-i18n="proj.intro">Cada proyecto, contado como lo pienso: qué problema había, qué decisión técnica tomé y en qué estado está. Sin métricas infladas.</p>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="mono project-ctx">Atrebo</span>
+              <span class="mono project-status status-live" data-i18n="proj.p1.status">en producción interna</span>
+            </div>
+            <h3 data-i18n="proj.p1.title">Extracción documental con LLMs on-premise</h3>
+            <dl class="project-body">
+              <div><dt class="mono" data-i18n="proj.label.problem">problema</dt><dd data-i18n="proj.p1.problem">Documentos técnicos heterogéneos con información crítica atrapada en PDFs, imposible de explotar a escala manualmente.</dd></div>
+              <div><dt class="mono" data-i18n="proj.label.approach">decisión</dt><dd data-i18n="proj.p1.approach">Pipeline completo on-premise por privacidad y coste: OCR y preprocesado, chunking, inferencia con Ollama en multi-GPU (Gemma, Qwen, DeepSeek) y postprocesado hacia JSON estructurado.</dd></div>
+              <div><dt class="mono" data-i18n="proj.label.result">resultado</dt><dd data-i18n="proj.p1.result">Sistema en uso interno, con precisión y consistencia mejoradas iterativamente mediante prompt engineering, testing y validación manual.</dd></div>
+            </dl>
+            <div class="tags mono"><span>Ollama</span><span>OCR</span><span>Chunking</span><span>Multi-GPU</span></div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="mono project-ctx">Atrebo</span>
+              <span class="mono project-status status-live" data-i18n="proj.p2.status">en uso continuo</span>
+            </div>
+            <h3 data-i18n="proj.p2.title">Benchmarking de LLMs</h3>
+            <dl class="project-body">
+              <div><dt class="mono" data-i18n="proj.label.problem">problema</dt><dd data-i18n="proj.p2.problem">Elegir modelo local a ciegas: sin datos comparables de calidad ni de coste real por inferencia.</dd></div>
+              <div><dt class="mono" data-i18n="proj.label.approach">decisión</dt><dd data-i18n="proj.p2.approach">Sistema de benchmarking que mide calidad de outputs, latencia, throughput y consumo de GPU por modelo y configuración.</dd></div>
+              <div><dt class="mono" data-i18n="proj.label.result">resultado</dt><dd data-i18n="proj.p2.result">Las decisiones de qué modelo corre en producción se toman con datos, no con intuición.</dd></div>
+            </dl>
+            <div class="tags mono"><span>Python</span><span>GPU profiling</span><span>Evaluación</span></div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="mono project-ctx">Freelance</span>
+              <span class="mono project-status status-live" data-i18n="proj.p3.status">cliente real · en evolución</span>
+            </div>
+            <h3 data-i18n="proj.p3.title">Dashboard de inspecciones de ascensores</h3>
+            <dl class="project-body">
+              <div><dt class="mono" data-i18n="proj.label.problem">problema</dt><dd data-i18n="proj.p3.problem">Un negocio real gestionando inspecciones de ascensores con procesos manuales dispersos.</dd></div>
+              <div><dt class="mono" data-i18n="proj.label.approach">decisión</dt><dd data-i18n="proj.p3.approach">Aplicación a medida con FastAPI y SQLite, integrando la API de Anthropic para las capacidades de IA. Stack deliberadamente simple: fácil de desplegar, fácil de mantener.</dd></div>
+              <div><dt class="mono" data-i18n="proj.label.result">resultado</dt><dd data-i18n="proj.p3.result">En uso por el cliente, con hoja de ruta para convertirlo en producto comercializable para más empresas del sector.</dd></div>
+            </dl>
+            <div class="tags mono"><span>FastAPI</span><span>SQLite</span><span>Anthropic API</span></div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="mono project-ctx" data-i18n="proj.p4.ctx">Personal</span>
+              <span class="mono project-status status-live" data-i18n="proj.p4.status">activo</span>
+            </div>
+            <h3 data-i18n="proj.p4.title">Pipeline de contenido automatizado</h3>
+            <dl class="project-body">
+              <div><dt class="mono" data-i18n="proj.label.problem">reto</dt><dd data-i18n="proj.p4.problem">¿Hasta dónde se puede automatizar la producción de contenido de principio a fin? Mi laboratorio personal para averiguarlo.</dd></div>
+              <div><dt class="mono" data-i18n="proj.label.approach">decisión</dt><dd data-i18n="proj.p4.approach">Pipeline propio que orquesta n8n, ElevenLabs, FFmpeg y CapCut, con un bot de Telegram desarrollado a medida para notificaciones del sistema.</dd></div>
+              <div><dt class="mono" data-i18n="proj.label.result">resultado</dt><dd data-i18n="proj.p4.result">Dos canales de YouTube operando de forma automatizada: ConfessedStories (inglés) y TerrorSinFiltro (español).</dd></div>
+            </dl>
+            <div class="tags mono"><span>n8n</span><span>ElevenLabs</span><span>FFmpeg</span><span>Telegram Bot</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 04 STACK ============ -->
+    <section class="section" id="stack">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="mono section-num">04</span>
+          <h2 data-i18n="stack.title">Stack</h2>
+        </div>
+        <div class="bento">
+          <div class="bento-card bento-wide reveal">
+            <h3 class="mono bento-title"><span class="accent">◆</span> <span data-i18n="stack.c1">IA & AI Engineering</span></h3>
+            <div class="tags mono">
+              <span>Claude / Claude Code</span><span>OpenAI</span><span>Ollama</span><span>Gemma · Qwen · DeepSeek</span><span data-i18n="stack.c1.t1">Prompt engineering</span><span data-i18n="stack.c1.t2">Diseño de agentes</span><span data-i18n="stack.c1.t3">Procesamiento documental</span><span>OCR</span>
+            </div>
+          </div>
+          <div class="bento-card reveal">
+            <h3 class="mono bento-title"><span class="accent">◆</span> <span data-i18n="stack.c2">Automatización & Data</span></h3>
+            <div class="tags mono">
+              <span>Python</span><span>Pandas</span><span>NumPy</span><span>scikit-learn</span><span>n8n</span><span data-i18n="stack.c2.t1">Web scraping</span><span>ETL</span>
+            </div>
+          </div>
+          <div class="bento-card reveal">
+            <h3 class="mono bento-title"><span class="accent">◆</span> <span data-i18n="stack.c3">Backend & Integración</span></h3>
+            <div class="tags mono">
+              <span>FastAPI</span><span>APIs REST</span><span>JSON</span><span>SQLite</span><span data-i18n="stack.c3.t1">Integración de servicios</span>
+            </div>
+          </div>
+          <div class="bento-card reveal">
+            <h3 class="mono bento-title"><span class="accent">◆</span> <span data-i18n="stack.c4">Frontend</span></h3>
+            <div class="tags mono">
+              <span>Angular</span><span>React</span><span>TypeScript</span><span>JavaScript</span>
+            </div>
+          </div>
+          <div class="bento-card reveal">
+            <h3 class="mono bento-title"><span class="accent">◆</span> <span data-i18n="stack.c5">Infra & Tools</span></h3>
+            <div class="tags mono">
+              <span>Docker</span><span>Caddy</span><span>Authentik</span><span>Git</span><span>Jira</span><span>Postman</span><span>Scrum</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 05 FORMACIÓN ============ -->
+    <section class="section" id="formacion">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="mono section-num">05</span>
+          <h2 data-i18n="edu.title">Formación</h2>
+        </div>
+        <ul class="edu-list">
+          <li class="edu-item reveal">
+            <span class="mono edu-date" data-i18n="edu.e1.date">2025 — en curso</span>
+            <div>
+              <h3 data-i18n="edu.e1.name">Máster en Inteligencia Artificial y Data Science</h3>
+              <p class="edu-org">UNIR</p>
+              <p class="edu-detail" data-i18n="edu.e1.detail">Análisis de datos, machine learning, Python para data science y desarrollo de agentes cloud.</p>
+            </div>
+          </li>
+          <li class="edu-item reveal">
+            <span class="mono edu-date" data-i18n="edu.e2.date">2019 — en curso</span>
+            <div>
+              <h3 data-i18n="edu.e2.name">Grado en Ingeniería Informática</h3>
+              <p class="edu-org" data-i18n="edu.e2.org">Universidad de Sevilla</p>
+            </div>
+          </li>
+          <li class="edu-item reveal">
+            <span class="mono edu-date">2022 — 2024</span>
+            <div>
+              <h3 data-i18n="edu.e3.name">Desarrollo de Aplicaciones Multiplataforma</h3>
+              <p class="edu-org">FESAC</p>
+            </div>
+          </li>
+        </ul>
+        <div class="langs reveal">
+          <span class="mono langs-label" data-i18n="edu.langs">idiomas</span>
+          <span class="tags mono"><span data-i18n="edu.lang1">Español · nativo</span><span data-i18n="edu.lang2">Inglés · C1</span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 06 CONTACTO ============ -->
+    <section class="section section-contact" id="contacto">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="mono section-num">06</span>
+          <h2 data-i18n="contact.title">Contacto</h2>
+        </div>
+        <div class="contact-box reveal">
+          <h3 class="contact-big" data-i18n="contact.big">¿Documentos caóticos, procesos manuales o una idea con IA dando vueltas? <em>Hablemos.</em></h3>
+          <p class="contact-sub" data-i18n="contact.sub">Respondo rápido por email. También disponible para proyectos freelance de automatización e IA aplicada.</p>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:eloyanguloc@gmail.com" data-i18n="contact.cta">Escríbeme un email</a>
+            <a class="btn btn-ghost mono" href="tel:+34672428457">+34 672 428 457</a>
+          </div>
+          <p class="mono contact-mail"><span class="accent">$</span> echo "eloyanguloc@gmail.com"</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="mono">© <span id="year">2026</span> Eloy Angulo Cánovas</span>
+      <span class="mono footer-note" data-i18n="footer.note">diseñado y construido a medida · sin plantillas</span>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
