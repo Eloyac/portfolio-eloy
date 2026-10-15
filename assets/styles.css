@@ -389,14 +389,7 @@ em {
   transform: translateY(-4px);
   box-shadow: var(--shadow);
 }
-.project-top { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
-.project-ctx { color: var(--text-faint); text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.68rem; }
-.project-status {
-  font-size: 0.68rem; padding: 4px 10px; border-radius: 999px;
-  border: 1px solid var(--border);
-}
-.status-live { color: var(--ok); border-color: color-mix(in srgb, var(--ok) 35%, transparent); }
-.status-past { color: var(--text-faint); }
+.project-num { color: var(--accent); letter-spacing: 0.08em; }
 .project-card h3 { font-size: 1.25rem; letter-spacing: -0.01em; }
 .project-body { margin: 0; display: flex; flex-direction: column; gap: 14px; flex: 1; }
 .project-body > div { display: flex; flex-direction: column; gap: 3px; }
