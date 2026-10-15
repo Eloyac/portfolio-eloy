@@ -17,7 +17,7 @@
       "nav.contact": "Contacto",
 
       "hero.role": "ai-engineer",
-      "hero.title": "Soy <em>AI Engineer</em>. Construyo sistemas y aplicaciones con IA.",
+      "hero.title": "Soy <em>AI Engineer</em>. Construyo sistemas con IA.",
       "hero.sub": "LLMs, RAG y extracción de documentos en cloud, on-premise y edge: despliegue, optimización de inferencia y evaluación.",
       "hero.status": "AI Engineer en Coterena · abierto a proyectos freelance",
       "term.title": "pipeline — ejemplo ilustrativo",
@@ -134,7 +134,7 @@
       "nav.contact": "Contact",
 
       "hero.role": "ai-engineer",
-      "hero.title": "I'm an <em>AI Engineer</em>. I build systems and applications with AI.",
+      "hero.title": "I'm an <em>AI Engineer</em>. I build systems with AI.",
       "hero.sub": "LLMs, RAG and document extraction across cloud, on-premise and edge: deployment, inference optimization and evaluation.",
       "hero.status": "AI Engineer at Coterena · open to freelance projects",
       "term.title": "pipeline — illustrative example",
